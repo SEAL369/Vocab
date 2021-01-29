@@ -89,4 +89,4 @@ Handled using BLoC pattern.
 1. Thanks to Oxford, Merrium Webstar, Words for their API services.
 2. Thanks to all the amazing people who have developed the 3rd party libraries for flutter.
 3. Thanks to the poeple who have developed the useful extensions for VS Code.
-4. Special thanks to [Reso Coder](https://github.com/ResoCoder) for his amazing tutorials on flutter and dart.
+4. Special thanks to [Reso Coder](https://github.com/ResoCoder) for his amazing tutorials on flutter and dart.# NewVocab

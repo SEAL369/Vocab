@@ -4,7 +4,7 @@ import 'package:vocab/core/error/exceptions.dart';
 
 import 'package:vocab/features/word_card/data/models/word_search_result_model.dart';
 
-import 'key.dart';
+//import 'key.dart';
 
 abstract class RemoteDictionary {
   String get host;
@@ -22,11 +22,11 @@ class WordsAPIRemoteDictionary implements RemoteDictionary {
   WordsAPIRemoteDictionary({this.client});
 
   @override
-  String get host => WORDS_API_HOST;
-
+  String get host => "wordsapiv1.p.rapidapi.com";
+//String get host => WORDS_API_HOST;
   @override
-  String get key => WORDS_API_KEY;
-
+  String get key => "9690b0d674msh905b65784e3ede5p106b3ejsncd4c906df18a";
+//String get key => WORDS_API_KEY;
   @override
   String get url => "https://wordsapiv1.p.rapidapi.com/words/";
 

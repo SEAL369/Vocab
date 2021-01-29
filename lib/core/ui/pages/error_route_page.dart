@@ -14,7 +14,7 @@ class ErrorRoutePage extends StatelessWidget {
         title: AppTitle(),
         actions: <Widget>[Icon(Icons.error)],
       ),
-      drawer: SideDrawer(page: Page.HomePage),
+     // drawer: SideDrawer(page: Page.HomePage),
       body: Center(
         child: HeadlineText(
           text: 'Error! No such route exists!',

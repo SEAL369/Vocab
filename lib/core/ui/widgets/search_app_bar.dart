@@ -15,12 +15,13 @@ class SearchAppBar extends StatelessWidget implements PreferredSizeWidget {
       elevation: 2,
       margin: const EdgeInsets.all(0),
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(5.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             AppTitle(),
             Expanded(
+              flex: 1,
               child: Row(
                 children: <Widget>[
                   Expanded(child: SearchBar()),

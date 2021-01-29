@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:vocab/core/navigation/routes.dart';
+import 'package:vocab/core/navigation/routes.dart' as MyRoute;
 
 import 'headline_text.dart';
 
@@ -24,12 +24,12 @@ class SideDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.home),
             title: Text('Search'),
-            selected: page == Page.HomePage,
+           // selected: page == MyRoute.Page.HomePage,
             onTap: () {
-              if (page != Page.HomePage) {
+              if (page != MyRoute.Page.HomePage) {
                 Navigator.pushReplacementNamed(
                   context,
-                  Page.HomePage.toString(),
+                  MyRoute.Page.HomePage.toString(),
                 );
               }
             },
@@ -37,12 +37,12 @@ class SideDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(MdiIcons.cards),
             title: Text('Saved'),
-            selected: page == Page.CardPage,
+          //  selected: page == MyRoute.Page.CardPage,
             onTap: () {
-              if (page != Page.CardPage) {
+              if (page != MyRoute.Page.CardPage) {
                 Navigator.pushReplacementNamed(
                   context,
-                  Page.CardPage.toString(),
+                  MyRoute.Page.CardPage.toString(),
                 );
               }
             },
@@ -50,12 +50,12 @@ class SideDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(MdiIcons.trophy),
             title: Text('Quiz'),
-            selected: page == Page.QuizPage,
+           // selected: page == MyRoute.Page.QuizPage,
             onTap: () {
-              if (page != Page.QuizPage) {
+              if (page != MyRoute.Page.QuizPage) {
                 Navigator.pushReplacementNamed(
                   context,
-                  Page.QuizPage.toString(),
+                  MyRoute.Page.QuizPage.toString(),
                 );
               }
             },
@@ -63,12 +63,12 @@ class SideDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(MdiIcons.chartBar),
             title: Text('Stats'),
-            selected: page == Page.StatisticsPage,
+           // selected: page == MyRoute.Page.StatisticsPage,
             onTap: () {
-              if (page != Page.StatisticsPage) {
+              if (page != MyRoute.Page.StatisticsPage) {
                 Navigator.pushReplacementNamed(
                   context,
-                  Page.StatisticsPage.toString(),
+                  MyRoute.Page.StatisticsPage.toString(),
                 );
               }
             },

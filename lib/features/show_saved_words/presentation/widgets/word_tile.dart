@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vocab/core/database/card_database.dart';
 import 'package:provider/provider.dart';
-import 'package:vocab/core/navigation/routes.dart';
+import 'package:vocab/core/navigation/routes.dart' as MyRoute;
 import 'package:vocab/core/ui/widgets/delete_alert_dialog.dart';
 import 'package:vocab/core/util/formatter.dart';
 import 'package:vocab/features/show_saved_words/domain/entity/word_details_summary.dart';
@@ -50,7 +50,7 @@ class _WordTileState extends State<WordTile> {
         onTap: () {
           Navigator.pushNamed(
             context,
-            '${Page.ShowWordInfoPage}',
+            '${MyRoute.Page.ShowWordInfoPage}',
             arguments: widget.wordSummary.word,
           );
         },

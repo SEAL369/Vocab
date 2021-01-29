@@ -19,7 +19,7 @@ enum Page {
   StatisticsPage,
 }
 
-Route generateRoute(RouteSettings settings) {
+Route<dynamic> generateRoute(RouteSettings settings) {
   if (settings.name == '${Page.HomePage}') {
     return MaterialPageRoute(
       builder: (BuildContext context) => BasePage(),

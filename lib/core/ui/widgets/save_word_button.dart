@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:vocab/core/entities/pronunciation.dart';
 import 'package:vocab/core/entities/word_card.dart';
-import 'package:vocab/core/navigation/routes.dart';
+import 'package:vocab/core/navigation/routes.dart' as MyRoute;
 import 'package:vocab/features/query_word/presentation/bloc/bloc.dart';
 import 'package:vocab/features/word_card/presentation/bloc/bloc.dart';
 
@@ -27,7 +27,7 @@ class SaveWordButton extends StatelessWidget {
               callBack = () {
                 Navigator.pushNamed(
                   context,
-                  '${Page.CardFormPage}',
+                  '${MyRoute.Page.CardFormPage}',
                   arguments: {
                     'wordCard': WordCard(
                       detailList: stateW.wordCard.detailList,

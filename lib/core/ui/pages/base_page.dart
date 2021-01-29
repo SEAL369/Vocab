@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:vocab/core/navigation/routes.dart';
+import 'package:vocab/core/navigation/routes.dart' as MyRoute;
 import 'package:vocab/core/ui/widgets/headline_text.dart';
 import 'package:vocab/core/ui/widgets/search_app_bar.dart';
 import 'package:vocab/core/ui/widgets/side_drawer.dart';
@@ -53,7 +53,8 @@ class _BasePageState extends State<BasePage> with TickerProviderStateMixin {
                 ],
               ),
             ),
-            drawer: SideDrawer(page: Page.HomePage),
+          //  drawer: SideDrawer(page: myRoute.Page.HomePage),
+          drawer: SideDrawer(),
             body: TabBarView(
               controller: _controller,
               children: <Widget>[QueryWordBody(), WordCardBody()],
