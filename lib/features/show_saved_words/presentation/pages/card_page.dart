@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:vocab/core/navigation/routes.dart';
+import 'package:vocab/core/navigation/routes.dart' as MyRoute;
 import 'package:vocab/core/ui/widgets/app_title.dart';
 import 'package:vocab/core/ui/widgets/side_drawer.dart';
 import 'package:vocab/features/show_saved_words/presentation/bloc/word_list_bloc.dart';
@@ -24,14 +24,15 @@ class CardPage extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(
                   context,
-                  '${Page.CardFormPage}',
+                  '${MyRoute.Page.CardFormPage}',
                   arguments: {'isEditing': false},
                 );
               },
             ),
           ],
         ),
-        drawer: SideDrawer(page: Page.CardPage),
+      //  drawer: SideDrawer(page: Page.CardPage),
+         drawer: SideDrawer(),
         body: ViewSavedWords(),
       ),
     );

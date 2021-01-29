@@ -5,6 +5,7 @@ import 'package:vocab/core/ui/widgets/app_title.dart';
 import 'package:vocab/core/ui/widgets/display_word_text.dart';
 import 'package:vocab/core/database/card_database.dart' as db;
 import 'package:vocab/core/ui/widgets/notifier.dart';
+import 'package:vocab/core/ui/widgets/side_drawer.dart';
 import 'package:vocab/features/word_save/domain/entity/word_details_keys.dart';
 import 'package:vocab/features/word_save/presentation/bloc/bloc.dart';
 import 'package:vocab/features/word_save/presentation/widgets/custom_text_field.dart';
@@ -73,6 +74,7 @@ class _CardFormPageState extends State<CardFormPage> {
             actions: _buildActions(state),
           ),
           body: _buildBody(state),
+          drawer: SideDrawer(),
         );
       },
     );

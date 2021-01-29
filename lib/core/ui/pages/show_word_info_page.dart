@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vocab/core/database/card_database.dart';
-import 'package:vocab/core/navigation/routes.dart';
+import 'package:vocab/core/navigation/routes.dart' as MyRoute;
 import 'package:vocab/core/ui/widgets/app_title.dart';
 import 'package:provider/provider.dart';
 import 'package:vocab/features/quiz_card/presentation/widgets/quiz_card_tab.dart';
@@ -51,7 +51,7 @@ class _ShowWordInfoPageState extends State<ShowWordInfoPage>
                 onPressed: () {
                   Navigator.pushNamed(
                     context,
-                    '${Page.CardFormPage}',
+                    '${MyRoute.Page.CardFormPage}',
                     arguments: {
                       'wordCard': snapshot.data,
                       'isEditing': true,

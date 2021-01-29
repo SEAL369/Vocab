@@ -52,7 +52,8 @@ class _StatisticsPageState extends State<StatisticsPage>
           ],
         ),
       ),
-      drawer: SideDrawer(page: Page.StatisticsPage),
+   //  drawer: SideDrawer(page: Page.StatisticsPage),
+   drawer: SideDrawer(),
       body: TabBarView(
         controller: _controller,
         children: <Widget>[WordStatisticsTab(), QuizStatisticsTab()],
